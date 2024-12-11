@@ -1,3 +1,4 @@
+import Calendly from "./Calendly"
 
 
 export const DifferencePage =()=>{
@@ -6,7 +7,7 @@ export const DifferencePage =()=>{
          <section className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-blue-600 mb-12">
-          The Difference We&apos;ve Made So Far
+          The Difference We've Made So Far
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
@@ -39,6 +40,14 @@ export const DifferencePage =()=>{
           </div>
         </div>
       </div>
+
+      <div className="flex justify-center mt-20">
+        <span className="text-2xl font-bold text-blue-600">Schedule A Time To Discuss Your Needs</span>
+      </div>
+        <Calendly></Calendly>
+       
+
+
     </section>
        
         </>
