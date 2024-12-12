@@ -13,7 +13,8 @@ export const Homepage = ()=>{
             
         </div>
         <div>
-            <button className="ml-20 mt-10 p-3 border border-customBlue text-customBlue w-80 hover:bg-customBlue hover:text-white">Book a Meeting</button>
+            <button className="ml-20 mt-10 p-3 border border-customBlue text-customBlue w-80 hover:bg-customBlue hover:text-white">
+                <a href="https://calendly.com/worksan646/30min"></a>Book a Meeting</button>
         </div>
         
             
