@@ -1,6 +1,4 @@
-import { useState } from "react";
-import { useEffect } from "react";
-import { SvgImages } from "./SvgImages";
+
 
 export const Services = ({title, description,Logo})=>{
  

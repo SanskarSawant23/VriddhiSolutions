@@ -5,7 +5,8 @@ import { Homepage } from './Components/Homepage'
 import { Imagecomponent } from './Components/Imagecomponent'
 import { WhatWeDo } from './Components/WhatWeDo'
 import { DifferencePage } from './Components/DifferencePage'
-
+import { People } from './Components/People'
+import { Form } from './Components/Form'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,6 +23,8 @@ function App() {
         </div>
         <WhatWeDo></WhatWeDo>
         <DifferencePage></DifferencePage>
+        <People></People>
+        <Form></Form>
         
         
         
