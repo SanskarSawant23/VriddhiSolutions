@@ -11,7 +11,7 @@ export const Services = ({title, description,Logo})=>{
                 <div className="mr-4 "><Logo></Logo></div>
                 
                 <h2 className=" ">
-                    <span className="text-3xl text-indigo-700 font-semibold">
+                    <span className="text-3xl text-customBlue font-semibold">
                         {title}
                     </span>
                 </h2>

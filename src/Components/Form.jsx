@@ -4,14 +4,18 @@ import { useState } from "react"
 export const Form = () =>{
     const[email, setEmail] = useState('')
     return (
-        <div className=" bg-blue-600 text-white p-8 grid md:grid-cols-3 gap-12 m-10 h-[500]">
+        <>
+        <section id="Form">
+        <div className=" bg-customBlue text-white p-8 grid md:grid-cols-3 gap-12 m-10 h-[500]">
           {/* Work Together Section */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Let's Work Together</h2>
             <div className="space-y-2">
               <p>Phone</p>
               <p>+919266537839</p>
-              <p className="mt-4">info@vriddhi.media</p>
+              <p className="mt-4">
+                <a href="mailto:info@vriddhi.media">info@vriddhi.media</a>
+                </p>
             </div>
           </div>
     
@@ -102,5 +106,7 @@ export const Form = () =>{
             </form>
           </div>
         </div>
+        </section>
+        </>
       )
 }

@@ -1,36 +1,43 @@
-import { useState } from 'react'
-import './App.css'
-import { Navbar } from './Components/Navbar'
-import { Homepage } from './Components/Homepage'
-import { Imagecomponent } from './Components/Imagecomponent'
-import { WhatWeDo } from './Components/WhatWeDo'
-import { DifferencePage } from './Components/DifferencePage'
-import { People } from './Components/People'
-import { Form } from './Components/Form'
+import { useState } from 'react';
+import './App.css';
+import { Navbar } from './Components/Navbar';
+import { Homepage } from './Components/Homepage';
+import { Imagecomponent } from './Components/Imagecomponent';
+import { WhatWeDo } from './Components/WhatWeDo';
+import { DifferencePage } from './Components/DifferencePage';
+import { People } from './Components/People';
+import { Form } from './Components/Form';
+import ChatBot from './Components/Chatbot';
+import { AnimatedWrapper } from './Components/AnimateWrapper';
 
 function App() {
-  const [count, setCount] = useState(0)
-  
-
-  
   return (
-    
-      <>
-        <Navbar></Navbar>
-        <div className='flex justify-between'>
-        <Homepage></Homepage>
-        <Imagecomponent></Imagecomponent>
+    <>
+      <Navbar />
+      <AnimatedWrapper>
+        <div className="flex justify-between">
+          <Homepage />
+          <Imagecomponent />
         </div>
-        <WhatWeDo></WhatWeDo>
-        <DifferencePage></DifferencePage>
-        <People></People>
-        <Form></Form>
-        
-        
-        
-        
-      </>
-  )
+      </AnimatedWrapper>
+      <AnimatedWrapper>
+         <WhatWeDo />
+       
+      </AnimatedWrapper>
+      <AnimatedWrapper>
+        <DifferencePage />
+      </AnimatedWrapper>
+      <AnimatedWrapper>
+        <People />
+      </AnimatedWrapper>
+      <AnimatedWrapper>
+        <Form />
+      </AnimatedWrapper>
+      <AnimatedWrapper>
+        <ChatBot />
+      </AnimatedWrapper>
+    </>
+  );
 }
 
-export default App
+export default App;

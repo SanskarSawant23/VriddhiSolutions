@@ -32,13 +32,14 @@ export const WhatWeDo = ()=>{
     ]
     return (
     <>
-    <div className="h-20 flex items-center justify-center ">
-         <div className="text-center text-2xl font-semibold ">What We Do</div>  
+    <section id="services">
+    <div className="h-20 flex items-center justify-center mt-10 ">
+         <div className="text-center text-2xl font-semibold "><span className="text-customBlue">What We Do</span></div>  
     </div>
     <div className="p-20 ">
-    <div className=" border-t-2 border-indigo-500">
+    <div className=" border-t-2 border-customBlue">
     {services.map((item)=>(
-        <div className="border-b-2 border-indigo-500">
+        <div className="border-b-2 border-customBlue">
         <Services title={item.title} description={item.description} Logo={item.Logo}></Services>
         </div>
     ))}
@@ -48,13 +49,14 @@ export const WhatWeDo = ()=>{
     </div>
     </div>
     <div className="flex justify-center">
-        <button className="border border-indigo-700 p-2 pr-10 pl-10">
-           <span className="text-indigo-700"> Book Now</span>
+        <button className="border border-customBlue text-customBlue p-2 pr-10 pl-10 hover:bg-customBlue hover:text-white">
+           <a href="https://calendly.com/worksan646/30min">Book Now</a> 
+            
             </button>
     </div>
     
 
-
+    </section>
     </>
     )
 }
