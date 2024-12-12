@@ -30,7 +30,7 @@ function App() {
         <ChatBot />
         <Router>
           <Routes>
-              <Route path='/newsletter' element = {<Newsletter></Newsletter>}></Route>
+              <Route></Route>
           </Routes>
         </Router>
         
