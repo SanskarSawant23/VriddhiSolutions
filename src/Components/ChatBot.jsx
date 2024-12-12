@@ -24,7 +24,7 @@ const ChatBot = () => {
         },
         {
           headers: {
-            Authorization: `Bearer `, 
+            Authorization: `Bearer ${process.env.REACT_APP_OPENAI_KEY}`,
            "Content-Type": "application/json",
           }
         }

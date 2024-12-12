@@ -9,34 +9,34 @@ import { People } from './Components/People';
 import { Form } from './Components/Form';
 import ChatBot from './Components/Chatbot';
 import { AnimatedWrapper } from './Components/AnimateWrapper';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Newsletter } from './Components/Newsletter';
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <AnimatedWrapper>
-        <div className="flex justify-between">
-          <Homepage />
-          <Imagecomponent />
-        </div>
-      </AnimatedWrapper>
-      <AnimatedWrapper>
-         <WhatWeDo />
-       
-      </AnimatedWrapper>
-      <AnimatedWrapper>
+  
+      <>
+        <Navbar />
+        <AnimatedWrapper>
+          <div className="flex justify-between">
+            <Homepage />
+            <Imagecomponent />
+          </div>
+        </AnimatedWrapper>
+        <WhatWeDo />
         <DifferencePage />
-      </AnimatedWrapper>
-      <AnimatedWrapper>
         <People />
-      </AnimatedWrapper>
-      <AnimatedWrapper>
         <Form />
-      </AnimatedWrapper>
-      <AnimatedWrapper>
         <ChatBot />
-      </AnimatedWrapper>
-    </>
+        <Router>
+          <Routes>
+              <Route path='/newsletter' element = {<Newsletter></Newsletter>}></Route>
+          </Routes>
+        </Router>
+        
+        
+      </>
+   
   );
 }
 

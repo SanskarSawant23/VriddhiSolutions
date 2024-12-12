@@ -1,7 +1,9 @@
+
+
+
+
 export const Navbar = () =>{
-
-    
-
+   
 
     const handleScroll =()=>{
         const servicesSection = document.getElementById('services');
@@ -23,17 +25,17 @@ export const Navbar = () =>{
             <img src="https://static.wixstatic.com/media/22791e_043cdd660d5f451a80750e04f8da012e~mv2.png/v1/fill/w_294,h_98,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Screenshot%202024-05-19%20234401.png" alt="vriddhi" />
           
             </div>
-            <div className="flex mr-40 gap-5 ">
-                     <button >
-                       <span className="hover:text-purple-800">Newsletter</span> 
+            <div className="flex mr-40 gap-5  ">
+                     <button>
+                       <span className=" text-customBlue hover:text-purple-800">Newsletter</span> 
                      </button>
                     <button onClick={handleScroll}>
-                        <span className="hover:text-purple-800">Services</span>
+                        <span className=" text-customBlue hover:text-purple-800">Services</span>
                     </button>
                     <button onClick={handleContact}>
-                        <span className="hover:text-purple-800">Contact</span>
+                        <span className=" text-customBlue hover:text-purple-800">Contact</span>
                         </button>
-                    <button className="border border-black p-2 hover:bg-blue-700 hover:text-white">
+                    <button className="border border-customBlue text-customBlue p-2 hover:bg-blue-700 hover:text-white">
                        <a href="https://calendly.com/worksan646/30min">Book a Session</a>
                         </button>
 
