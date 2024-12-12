@@ -7,7 +7,7 @@ import { WhatWeDo } from './Components/WhatWeDo';
 import { DifferencePage } from './Components/DifferencePage';
 import { People } from './Components/People';
 import { Form } from './Components/Form';
-import ChatBot from './Components/Chatbot';
+import ChatAssistant from './Components/ChatAssistant';
 import { AnimatedWrapper } from './Components/AnimateWrapper';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Newsletter } from './Components/Newsletter';
@@ -27,7 +27,7 @@ function App() {
         <DifferencePage />
         <People />
         <Form />
-        <ChatBot />
+        <ChatAssistant />
         <Router>
           <Routes>
               <Route></Route>

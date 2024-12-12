@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const ChatBot = () => {
+const ChatAssistant = () => {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -102,4 +102,4 @@ const ChatBot = () => {
   );
 };
 
-export default ChatBot;
+export default ChatAssistant;
